@@ -1,84 +1,34 @@
-   public class Sandwich {
-       private Bread bread;
-       private SandwichFilling filling;
-       private double calories;
-   
-       // Constructor
-       public Sandwich(Bread bread, SandwichFilling filling) {
-           this.bread = bread;
-           this.filling = filling;
-       }
-   
-       public Bread getBread() {
-           return bread;
-       }
-   
-       public void setBread(Bread bread) {
-           this.bread = bread;
-       }
-   
-       public SandwichFilling getFilling() {
-           return filling;
-       }
-   
-       public void setFilling(SandwichFilling filling) {
-           this.filling = filling;
-       }
-   
-       public double getCalories() {
-           return bread.getCalories() + filling.getCalories();
-       }
-   
-       public void setCalories(double calories) {
-           this.calories = calories;
-       }
-   
-       
-       public String toString() {
-           return "Sandwich{" +
-                   "bread=" + bread +
-                   ", filling=" + filling +
-                   ", calories=" + getCalories() +
-                   '}';
-       }
+public class Sandwich {
+   // Private Variables
+   private String bread;
+   private String filling;
+   private int caloriesPerSlice;
+
+   // Constructor
+   public Sandwich(String bread, String filling, int caloriesPerSlice) {
+       this.bread = bread;
+       this.filling = filling;
+       this.caloriesPerSlice = caloriesPerSlice;
+    }
+
+   // Getters to retrieve the values of bread and filling
+   public String getBread() {
+       return bread;
    }
-   
-   
-   // Bread variable class
-   class Bread {
-       private String type;
-       private double calories;
-   
-       public Bread(String type, double calories) {
-           this.type = type;
-           this.calories = calories;
-       }
-   
-       public double getCalories() {
-           return calories;
-       }
-   
-       public String toString() {
-           return type;
-       }
+
+   public String getFilling() {
+       return filling;
+    }
+
+   public int getTotalCalories() {
+       return caloriesPerSlice ;
    }
-   
-   // SandwichFiling variable class
-   class SandwichFilling {
-       private String fillingName;
-       private double calories;
-   
-       public SandwichFilling(String fillingName, double calories) {
-           this.fillingName = fillingName;
-           this.calories = calories;
-       }
-   
-       public double getCalories() {
-           return calories;
-       }
-   
-   
-       public String toString() {
-           return fillingName;
-       }
+
+   // Display
+   public void displaySandwichData() {
+       System.out.println("Bread: " + bread);
+       System.out.println("Filling: " + filling);
+       System.out.println("Total Calories: " + getTotalCalories());
+       System.out.println();
    }
+}
