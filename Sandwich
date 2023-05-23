@@ -2,13 +2,13 @@ public class Sandwich {
    // Private Variables
    private String bread;
    private String filling;
-   private int caloriesPerSlice;
+   private int calories;
 
    // Constructor
-   public Sandwich(String bread, String filling, int caloriesPerSlice) {
+   public Sandwich(String bread, String filling, int calories) {
        this.bread = bread;
        this.filling = filling;
-       this.caloriesPerSlice = caloriesPerSlice;
+       this.calories = calories;
     }
 
    // Getters to retrieve the values of bread and filling
@@ -21,7 +21,7 @@ public class Sandwich {
     }
 
    public int getTotalCalories() {
-       return caloriesPerSlice ;
+       return calories ;
    }
 
    // Display
