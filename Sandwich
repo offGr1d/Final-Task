@@ -3,6 +3,7 @@
        private SandwichFilling filling;
        private double calories;
    
+       // Constructor
        public Sandwich(Bread bread, SandwichFilling filling) {
            this.bread = bread;
            this.filling = filling;
@@ -32,7 +33,7 @@
            this.calories = calories;
        }
    
-       @Override
+       
        public String toString() {
            return "Sandwich{" +
                    "bread=" + bread +
@@ -42,6 +43,8 @@
        }
    }
    
+   
+   // Bread variable class
    class Bread {
        private String type;
        private double calories;
@@ -60,6 +63,7 @@
        }
    }
    
+   // SandwichFiling variable class
    class SandwichFilling {
        private String fillingName;
        private double calories;
