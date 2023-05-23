@@ -1,0 +1,80 @@
+   public class Sandwich {
+       private Bread bread;
+       private SandwichFilling filling;
+       private double calories;
+   
+       public Sandwich(Bread bread, SandwichFilling filling) {
+           this.bread = bread;
+           this.filling = filling;
+       }
+   
+       public Bread getBread() {
+           return bread;
+       }
+   
+       public void setBread(Bread bread) {
+           this.bread = bread;
+       }
+   
+       public SandwichFilling getFilling() {
+           return filling;
+       }
+   
+       public void setFilling(SandwichFilling filling) {
+           this.filling = filling;
+       }
+   
+       public double getCalories() {
+           return bread.getCalories() + filling.getCalories();
+       }
+   
+       public void setCalories(double calories) {
+           this.calories = calories;
+       }
+   
+       @Override
+       public String toString() {
+           return "Sandwich{" +
+                   "bread=" + bread +
+                   ", filling=" + filling +
+                   ", calories=" + getCalories() +
+                   '}';
+       }
+   }
+   
+   class Bread {
+       private String type;
+       private double calories;
+   
+       public Bread(String type, double calories) {
+           this.type = type;
+           this.calories = calories;
+       }
+   
+       public double getCalories() {
+           return calories;
+       }
+   
+       public String toString() {
+           return type;
+       }
+   }
+   
+   class SandwichFilling {
+       private String fillingName;
+       private double calories;
+   
+       public SandwichFilling(String fillingName, double calories) {
+           this.fillingName = fillingName;
+           this.calories = calories;
+       }
+   
+       public double getCalories() {
+           return calories;
+       }
+   
+   
+       public String toString() {
+           return fillingName;
+       }
+   }
