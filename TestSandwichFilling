@@ -1,0 +1,11 @@
+public class TestSandwichFilling{
+   public static void main(String[] args){
+      SandwichFilling filling1 = new SandwichFilling("Broccoli Pasta Salad", 200);
+      SandwichFilling filling2 = new SandwichFilling("Shredded Brussels Sprout Salad", 150);
+      SandwichFilling filling3 = new SandwichFilling("Rainbow Orzo Salad", 100);
+      
+      System.out.println("Filling 1: " +filling1.getFillingType()+ ", Calories: " +filling1.getCaloriesPerServing());
+      System.out.println("Filling 2: " +filling2.getFillingType()+ ", Calories: " +filling2.getCaloriesPerServing());
+      System.out.println("Filling 3: " +filling3.getFillingType()+ ", Calories: " +filling3.getCaloriesPerServing());
+   }
+}
