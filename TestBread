@@ -1,0 +1,27 @@
+public class TestBread{
+   public static void main(String[] args){
+      Bread ryeBread = new Bread("Rye", 100);
+      Bread wheatBread = new Bread("Wheat", 80);
+      Bread sourdoughBread = new Bread("Sourdough", 120);
+      
+      System.out.println("Rye Bread");
+      System.out.println("Bread type: " +ryeBread.getBreadType());
+      System.out.println("Calories per slice: " +ryeBread.getCaloriesPerSlice());
+      System.out.println("Motto: " +Bread.MOTTO);
+      System.out.println("");
+      
+      System.out.println("Wheat Bread");
+      System.out.println("Bread type: " +wheatBread.getBreadType());
+      System.out.println("Calories per slice: " +wheatBread.getCaloriesPerSlice());
+      System.out.println("Motto: " +Bread.MOTTO);
+      System.out.println("");
+      
+      System.out.println("Sourdough Bread");
+      System.out.println("Bread type: " +sourdoughBread.getBreadType());
+      System.out.println("Calories per slice: " +sourdoughBread.getCaloriesPerSlice());
+      System.out.println("Motto: " +Bread.MOTTO);
+      System.out.println("");
+
+
+   }
+}
