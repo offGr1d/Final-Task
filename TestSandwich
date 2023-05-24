@@ -1,26 +1,11 @@
 public class TestSandwich {
-
     public static void main(String[] args) {
+      Sandwich sandwich1 = new Sandwich("White bread", "Ham and cheese", 200);
+      Sandwich sandwich2 = new Sandwich("Whole wheat bread", "Turkey and avocado", 250);
+      Sandwich sandwich3 = new Sandwich("Multigrain bread", "Chicken and bacon", 50);
 
-        Bread wheatBread = new Bread("Wheat", 100);
-        SandwichFilling tunaFilling = new SandwichFilling("Tuna", 200);
-        Sandwich sandwich1 = new Sandwich(wheatBread, tunaFilling);
-
-        Bread whiteBread = new Bread("White", 50);
-        SandwichFilling hamAndCheeseFilling = new SandwichFilling("Ham and Cheese", 300);
-        Sandwich sandwich2 = new Sandwich(whiteBread, hamAndCheeseFilling);
-
-        Bread roastedGarlicBread = new Bread("Roasted Garlic", 150);
-        SandwichFilling chickenSaladFilling = new SandwichFilling("Chicken Salad", 400);
-        Sandwich sandwich3 = new Sandwich(roastedGarlicBread, chickenSaladFilling);
-
-        System.out.println("Sandwich 1:");
-        System.out.println(sandwich1);
-
-        System.out.println("Sandwich 2:");
-        System.out.println(sandwich2);
-
-        System.out.println("Sandwich 3:");
-        System.out.println(sandwich3);
+      sandwich1.displaySandwichData();
+      sandwich2.displaySandwichData();
+      sandwich3.displaySandwichData();
     }
 }
