@@ -4,14 +4,14 @@ public class Sandwich {
    private String filling;
    private int calories;
 
-   // Constructor
+   // Constructor that takes three parameters: "bread", "filling", and "calories"
    public Sandwich(String bread, String filling, int calories) {
        this.bread = bread;
        this.filling = filling;
        this.calories = calories;
     }
 
-   // Getters to retrieve the values of bread and filling
+   // Accessor to retrieve the values of bread, filling, calories
    public String getBread() {
        return bread;
    }
@@ -32,4 +32,3 @@ public class Sandwich {
        System.out.println();
    }
 }
-
