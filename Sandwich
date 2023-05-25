@@ -1,17 +1,17 @@
 public class Sandwich {
-   // Private Variables
+
    private String bread;
    private String filling;
    private int calories;
 
-   // Constructor that takes three parameters: "bread", "filling", and "calories"
+
    public Sandwich(String bread, String filling, int calories) {
        this.bread = bread;
        this.filling = filling;
        this.calories = calories;
     }
 
-   // Accessor to retrieve the values of bread, filling, calories
+
    public String getBread() {
        return bread;
    }
